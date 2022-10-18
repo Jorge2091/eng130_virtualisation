@@ -30,3 +30,27 @@ https://www.vagrantup.com/
 - Research how to copy file from 1 location to another
 - copy test.txt into app folder
 - To copy and paste a file, you can use the command `cp [copyfilelocation] [pastelocation]`
+- How to navigate between OS & VM `exit` enter
+- For admin access `sudo` switch to admin iser `sudo su`
+- Change permission `chmod instruction file-name` i.e. `chmod 700 test.txt`
+- Currently running process `top` & `ps aux`
+- To remove any process `kill PID` - `kill 7`
+- how to delete folder/hidden folder `ls -a`
+- Print last 3 lines from the test.txt
+- Print first 3 lines from the test.txt
+- Print last 10 lines from the test.txt
+- Print last line from the test.txt
+- Research how to use `| pipe` & `grep` & `sort`
+- `ps aux` short list by name 
+- How to create/run a process in the background & foreground, create/run a process in both areas
+- Kill the process that you created <br/>
+<br/>
+
+- Install `nginx` in our VM
+- Create a `private-network` between localhost & VM
+- Allocate an IP address - for mac users
+- `sudo apt-get install nginx -y`
+- How to check a tool/software status in linux `sudo systemctl status nginx`
+- How to restart a process in linux `sudo systemctl restart nginx`
+- If `vagrant reload` does not work, then you need to `vagrant destroy` and then `vagrant up`
+- 
