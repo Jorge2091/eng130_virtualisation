@@ -17,6 +17,8 @@ https://www.vagrantup.com/
 
 
 ### Vagrant
+One everything is install, you will need to start the Vegrantfile also shown inside this directory. The Vagrantfile(case sensitive), also a command line that will connect and download any software needed, this can be executed using `vegrant Vegrantfile`. Once this is done, you can start the virtual machine using the command line `vagrant up`. This may take some time but once this is done, you can check inside Virtualbox that a new machine has started with ubuntu 16.04 installed. To get inside the virtual machine, you will need to use the command line `vagrant ssh`, and this will send you inside the virtual machine's terminal, which will now transform into a ubuntu terminal.
+
 - at the start when you first go in, you can update any software that needs updating. the command line for ubuntu is `sudo apt-get update` - this also checks if you have internet connection as updating softwares needs an internet connection
 - the next code is to upgrade any software that are missing, the command line for this is: `sudo apt-get upgrade` and accept any upgrade with just pressing y and enter or to automate this, just add a `-y` at the end of the command line.
 - To know where you are inside ubuntu, you run the command `pwd` and this shows you the path to your location.
