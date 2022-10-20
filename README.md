@@ -56,6 +56,8 @@ One everything is install, you will need to start the Vegrantfile also shown ins
 - How to check a tool/software status in linux `sudo systemctl status nginx`
 - How to restart a process in linux `sudo systemctl restart nginx`
 - If `vagrant reload` does not work, then you need to `vagrant destroy` and then `vagrant up`
+- how to run node app in the background `nohup node app.js > /dev/null 2>&1 &` or `npm start & disown`
+- access nginx logs `/var/log/nginx`
 
 
 ## Vagrant installations inside virtual box
@@ -70,3 +72,27 @@ sudo npm install pm2 -g
 ```
 - And now you can start your app.js using the `npm install` and then `npm start`
 - Then you can go to 192.168.10.100:3000 to get into the app.js site.
+
+
+## How to provision the proxy
+- remove the default - replace it with your own file
+- replace it with your own file `sudo cp existing-location /etc/nginx/site-available/default`
+- `sudo nginx -t`
+- restart `sudo systemctl restart nginx`
+- enable `sudo systemctl enable nginx`
+
+## Linux Env Var
+- sysntax NAME=JORGE
+- How to check existing env var `env`
+- `export` to create env var
+
+### VM mongodb
+
+- step 1 create 2 VMs - 1.1 set up app machine - 1.2 install mongodb in db machine
+- step 2 install required monodb with valid key
+- step 3 ensure it's running - 3.1 change mongod conf file to allow access to everyone
+- step 4 restart mongodb then enable then check status to ensure it's running with new config. `cat mongod.conf`
+- back to app machine to create env var called `export DB_HOST=mongodb/192.168.33.150:27017/posts`
+
+#### Inside db
+- 
