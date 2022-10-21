@@ -95,4 +95,4 @@ sudo npm install pm2 -g
 - back to app machine to create env var called `export DB_HOST=mongodb/192.168.33.150:27017/posts`
 
 #### Inside db
-- Test 2
+- Test 2sesat 
